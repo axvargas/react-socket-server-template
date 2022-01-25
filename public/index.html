@@ -39,10 +39,6 @@
   const messages = document.querySelector('#myMessages');
   const txtMessage = document.querySelector('#txtMessage');
 
-  console.log(formu);
-  console.log(messages);
-  console.log(txtMessage);
-
   socket.on('welcome-message', (data) => {
     console.log('Server says: ', data.msg + ' at ' + data.date.toLocaleString());
   });
